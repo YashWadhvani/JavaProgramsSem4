@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Calculator {
+public class Program03_Calculator {
     static float add(float a, float b) {
         return a + b;
     }

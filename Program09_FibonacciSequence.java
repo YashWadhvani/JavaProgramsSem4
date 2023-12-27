@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class FibonacciSequence {
+public class Program09_FibonacciSequence {
 
     public static void main(String[] args) {
         int terms, t1 = 0, t2 = 1, t3, count = 0;

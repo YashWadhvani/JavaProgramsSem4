@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class CharTest {
+public class Program10_CharTest {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter any String:-");
@@ -13,7 +13,8 @@ public class CharTest {
                 char c = str.charAt(0);
                 if (Character.isDigit(c)) {
                     System.out.println("You entered a Number. Enter a character to check Vowel or Consonant.");
-                } else if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
+                } else if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I'
+                        || c == 'O' || c == 'U') {
                     System.out.println("The Character you entered is Vowel.");
                 } else {
                     System.out.println("The Character you entered is Consonant.");

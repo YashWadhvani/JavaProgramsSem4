@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Greatest {
+public class Program04_Greatest {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             int a, b, c;
@@ -11,18 +11,18 @@ public class Greatest {
             System.out.println("Enter 3rd No. :- ");
             c = sc.nextInt();
 
-            if (a>b) {
-                if (a>c) {
-                    System.out.println("\n"+a+" Is Greatest.");
+            if (a > b) {
+                if (a > c) {
+                    System.out.println("\n" + a + " Is Greatest.");
                 } else {
-                    System.out.println("\n"+c+" Is Greatest.");
-                }   
+                    System.out.println("\n" + c + " Is Greatest.");
+                }
             } else {
-                if (b>c) {
-                    System.out.println("\n"+b+" Is Greatest.");
+                if (b > c) {
+                    System.out.println("\n" + b + " Is Greatest.");
                 } else {
-                    System.out.println("\n"+c+" Is Greatest.");
-                }               
+                    System.out.println("\n" + c + " Is Greatest.");
+                }
             }
         }
     }

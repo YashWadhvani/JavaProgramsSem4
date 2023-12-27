@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class KMToMiles {
+public class Program07_KMToMiles {
     public static void main(String[] args) {
         double conv_fac = 0.621371;
         try (Scanner sc = new Scanner(System.in)) {
