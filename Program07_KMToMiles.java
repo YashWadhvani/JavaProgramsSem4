@@ -1,3 +1,6 @@
+// Write a Java Program to convert Distance from KM to Miles or Vice Versa.
+// Date : 20/12/2023, Author : Yash Wadhvani
+
 import java.util.Scanner;
 
 public class Program07_KMToMiles {

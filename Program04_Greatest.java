@@ -1,3 +1,6 @@
+// Write a Java Program to find the Greatest Number of the 3 entered Numbers.
+// Date : 20/12/2023, Author : Yash Wadhvani
+
 import java.util.*;
 
 public class Program04_Greatest {
