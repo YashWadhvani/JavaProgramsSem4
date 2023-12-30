@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Program10_FloatingPoint {
+public class Program09_FloatingPoint {
     public static void main(String[] args) {
         float a, b;
         try (Scanner sc = new Scanner(System.in)) {

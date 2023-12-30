@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Program05_Lowest {
+public class Program04_Lowest {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             int a, b, c;

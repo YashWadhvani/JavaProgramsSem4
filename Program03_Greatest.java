@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Program04_Greatest {
+public class Program03_Greatest {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             int a, b, c;

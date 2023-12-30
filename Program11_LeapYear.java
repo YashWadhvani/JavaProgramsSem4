@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Program12_LeapYear {
+public class Program11_LeapYear {
     public static void main(String[] args) {
         int year;
         try (Scanner sc = new Scanner(System.in)) {

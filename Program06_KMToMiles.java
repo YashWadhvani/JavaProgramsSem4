@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Program07_KMToMiles {
+public class Program06_KMToMiles {
     public static void main(String[] args) {
         double conv_fac = 0.621371;
         try (Scanner sc = new Scanner(System.in)) {

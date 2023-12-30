@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Program09_FibonacciSequence {
+public class Program08_FibonacciSequence {
 
     public static void main(String[] args) {
         int terms, t1 = 0, t2 = 1, t3, count = 0;
