@@ -23,3 +23,9 @@ A Repository for storing all the Programs made during the Object Oriented Progra
     22
     333
     4444
+15. Write a Java program to make such a pattern like a right angle triangle with the number increased by 1.
+    The pattern like :
+    1
+    2 3
+    4 5 6
+    7 8 9 10
