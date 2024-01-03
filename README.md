@@ -29,3 +29,5 @@ A Repository for storing all the Programs made during the Object Oriented Progra
     2 3\
     4 5 6\
     7 8 9 10
+16. Write a java program to add two numbers using class and object.
+17. Write a Java program to create class Student. The class should have attributes student ID, student name, marks for 3 subjects and the member functions are setdata() and displaydata(). Calculate the average marks for student.
