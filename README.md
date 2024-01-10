@@ -18,14 +18,16 @@ A Repository for storing all the Programs made during the Object Oriented Progra
 12. Write a Java program to display the first 10 natural numbers.
 13. Write a Java program to display the multiplication table of a given integer.
 14. Write a program in Java to make such a pattern like a right angle triangle with a number which repeats a number in a row.
-    The pattern is as follows :
-    1
-    22
-    333
+    The pattern is as follows :\
+    1\
+    22\
+    333\
     4444
 15. Write a Java program to make such a pattern like a right angle triangle with the number increased by 1.
-    The pattern like :
-    1
-    2 3
-    4 5 6
+    The pattern like :\
+    1\
+    2 3\
+    4 5 6\
     7 8 9 10
+16. Write a java program to add two numbers using class and object.
+17. Write a Java program to create class Student. The class should have attributes student ID, student name, marks for 3 subjects and the member functions are setdata() and displaydata(). Calculate the average marks for student.
