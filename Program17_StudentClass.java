@@ -1,5 +1,5 @@
 
-//Write a Java program to create class Student. The class should have attributes student ID, student name, marks for 3 subjects and the member functions are setdata() and displaydata(). Calculate the average marks for student.
+/*Write a Java program to create class Student. The class should have attributes student ID, student name, marks for 3 subjects and the member functions are setdata() and displaydata(). Calculate the average marks for student.*/
 import java.util.*;
 
 public class Program17_StudentClass {
