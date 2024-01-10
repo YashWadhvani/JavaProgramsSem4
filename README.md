@@ -31,3 +31,5 @@ A Repository for storing all the Programs made during the Object Oriented Progra
     7 8 9 10
 16. Write a java program to add two numbers using class and object.
 17. Write a Java program to create class Student. The class should have attributes student ID, student name, marks for 3 subjects and the member functions are setdata() and displaydata(). Calculate the average marks for student.
+18. Create a class Person with attributes name and age. Derive a class Employee from Person with additional attributes employeeId and salary. Create objects of both classes and demonstrate how inheritance works in accessing the attributes of the base class.
+19. Implement a simple banking system using inheritance. Create a base class Account with attributes accountNumber and balance. Derive two classes SavingsAccount and CurrentAccount from Account. Add methods to deposit and withdraw money. Demonstrate the use of these classes with sample account transactions.
