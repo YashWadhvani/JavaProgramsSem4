@@ -89,13 +89,13 @@ class Triangle extends Shape {
 
 public class Program19_Shape {
     public static void main(String[] args) {
-        Circle c = new Circle(10);
-        c.displayMetrics();
+        Circle circle = new Circle(10);
+        circle.displayMetrics();
 
-        Rectangle r = new Rectangle(15, 20);
-        r.displayMetrics();
+        Rectangle rectangle = new Rectangle(15, 20);
+        rectangle.displayMetrics();
 
-        Triangle t = new Triangle(5);
-        t.displayMetrics();
+        Triangle triangle = new Triangle(5);
+        triangle.displayMetrics();
     }
 }
