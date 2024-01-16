@@ -75,8 +75,5 @@ public class Program20_Product {
 
         Books TLove = new Books(3, "Twisted Love", 300, "Ana Huang");
         TLove.displayInfo();
-
-        Books TGames = new Books(4, "Twisted Games", 400, "Ana Huang");
-        TGames.displayInfo();
     }
 }
