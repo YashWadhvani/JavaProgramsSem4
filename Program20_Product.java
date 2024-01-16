@@ -67,12 +67,16 @@ class Books extends Product {
 
 public class Program20_Product {
     public static void main(String[] args) {
-        Clothing Tee = new Clothing(9, "A's T", 999, "S");
+        Clothing Tee = new Clothing(1, "T Shirt", 999, "S");
         Tee.displayInfo();
 
-        Books TLove = new Books(1, "Twisted Love", 300, "Ana Huang");
-        Books TGames = new Books(2, "Twisted Games", 400, "Ana Huang");
+        Electronics Laptop = new Electronics(2, "Laptop", 89990, "HP");
+        Laptop.displayInfo();
+
+        Books TLove = new Books(3, "Twisted Love", 300, "Ana Huang");
         TLove.displayInfo();
+
+        Books TGames = new Books(4, "Twisted Games", 400, "Ana Huang");
         TGames.displayInfo();
     }
 }
