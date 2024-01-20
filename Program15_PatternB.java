@@ -6,6 +6,7 @@ Write a Java program to make such a pattern like a right angle triangle with the
     4 5 6
     7 8 9 10 
 */
+// Date : 28/12/2023, Author : Yash Wadhvani
 
 import java.util.Scanner;
 
