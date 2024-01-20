@@ -1,4 +1,6 @@
 // Create a class Person with attributes name and age. Derive a class Employee from Person with additional attributes employeeId and salary. Create objects of both classes and demonstrate how inheritance works in accessing the attributes of the base class.
+// Date : 10/01/2024, Author : Yash Wadhvani
+
 class Person {
     String Name;
     int age;
