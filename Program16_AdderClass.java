@@ -1,5 +1,6 @@
-
 //Write a java program to add two numbers using class and object.
+// Date : 03/01/2024, Author : Yash Wadhvani
+
 import java.util.*;
 
 class adder {
