@@ -73,7 +73,7 @@ public class Program21_BankAccounts {
             System.out.println("Bank Management System");
             System.out.println("Enter Account Holder Name:");
             Name = sc.next();
-            System.out.println("1. Create Savings Account.\n2. Create Checking Account.");
+            System.out.println("1. Create Savings Account.\n2. Create Checking Account.\n3. Exit.");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
@@ -81,6 +81,8 @@ public class Program21_BankAccounts {
                     break;
                 case 2:
                     CheckingAccount(Name);
+                    break;
+                case 3:
                     break;
                 default:
                     System.out.println("Invalid Choice! Please Enter a Valid Choice.");
@@ -102,12 +104,12 @@ public class Program21_BankAccounts {
                     System.out.println("Enter Amount to Deposit :-");
                     amount = sc.nextInt();
                     SA.deposit(amount, SA.accBalance);
-                    continue;
+                    break;
                 case 2:
                     System.out.println("Enter Amount to Withdraw :-");
                     amount = sc.nextInt();
                     SA.withdraw(amount, SA.accBalance);
-                    continue;
+                    break;
                 case 3:
                     System.out.println("Thank You for Using Bank Management System.");
                     break;
