@@ -15,6 +15,7 @@ class BankAccount {
 
     int deposit(int amount, int accBalance) {
         accBalance += amount;
+        System.out.println(accBalance);
         return accBalance;
     }
 
@@ -24,6 +25,7 @@ class BankAccount {
         } else {
             System.out.println("Insufficient Balance.");
         }
+
         return accBalance;
     }
 }
@@ -36,11 +38,13 @@ class SavingsAccount extends BankAccount {
 
     @Override
     int withdraw(int amount, int accBalance) {
+        System.out.println(accBalance);
         if (amount <= withLimit && ((accBalance - amount) >= minBalance)) {
             accBalance -= amount;
         } else {
             System.out.println("Insufficient Balance.");
         }
+        System.out.println(accBalance);
         return accBalance;
     }
 }
@@ -58,6 +62,7 @@ class CheckingAccount extends BankAccount {
         } else {
             System.out.println("Insufficient Balance.");
         }
+        System.out.println(accBalance);
         return accBalance;
     }
 }
