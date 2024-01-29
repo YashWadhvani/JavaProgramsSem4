@@ -39,9 +39,9 @@ A Repository for storing all the Programs made during the Object Oriented Progra
 Design a package structure for the bookstore management system. Additionally, create a sample class within each package to demonstrate its functionality.\
 Suggested Package Structure:\
 bookstore.core : \
-	> Sample Class: Book - Represents a book with attributes such as title, author, ISBN, and price.\
+	&nbsp;&nbsp;&nbsp;&nbsp; Sample Class: Book - Represents a book with attributes such as title, author, ISBN, and price.\
 bookstore.inventory : \
-	> Sample Class: InventoryManager - Provides methods to add new books to inventory, update stock levels, and retrieve book details.\
+	&nbsp;&nbsp;&nbsp;&nbsp; Sample Class: InventoryManager - Provides methods to add new books to inventory, update stock levels, and retrieve book details.\
 bookstore.users : \
-	> Sample Class: Customer - Represents a customer with attributes like name, contact details, and purchase history.\
+	&nbsp;&nbsp;&nbsp;&nbsp; Sample Class: Customer - Represents a customer with attributes like name, contact details, and purchase history.\
 (A Folder Named 'bookstore' which contains 3 folders - 'core', 'inventory' & 'users'. 'core' contains definition of 'Book' Class. 'inventory' contains definition of 'InventoryManager' Class. 'users' contains definition of 'Customer' Class.)
