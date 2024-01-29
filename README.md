@@ -38,10 +38,10 @@ A Repository for storing all the Programs made during the Object Oriented Progra
 22. Develop a Java application for a bookstore management system. The application needs to handle various operations such as adding new books and managing inventory and to ensure proper organization and modularity, utilize Java packages.\
 Design a package structure for the bookstore management system. Additionally, create a sample class within each package to demonstrate its functionality.\
 Suggested Package Structure:\
-&nbsp;&nbsp;&nbsp;&nbsp;bookstore.core : \
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sample Class: Book - Represents a book with attributes such as title, author, ISBN, and price.\
-&nbsp;&nbsp;&nbsp;&nbsp;bookstore.inventory : \
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sample Class: InventoryManager - Provides methods to add new books to inventory, update stock levels, and retrieve book details.\
-&nbsp;&nbsp;&nbsp;&nbsp;bookstore.users : \
-	&emsp; Sample Class: Customer - Represents a customer with attributes like name, contact details, and purchase history.\
+&emsp;bookstore.core : \
+	&emsp;&emsp; Sample Class: Book - Represents a book with attributes such as title, author, ISBN, and price.\
+&emsp;bookstore.inventory : \
+	&emsp;&emsp; Sample Class: InventoryManager - Provides methods to add new books to inventory, update stock levels, and retrieve book details.\
+&emsp;bookstore.users : \
+	&emsp;&emsp; Sample Class: Customer - Represents a customer with attributes like name, contact details, and purchase history.\
 (A Folder Named 'bookstore' which contains 3 folders - 'core', 'inventory' & 'users'. 'core' contains definition of 'Book' Class. 'inventory' contains definition of 'InventoryManager' Class. 'users' contains definition of 'Customer' Class.)
