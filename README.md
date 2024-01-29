@@ -43,5 +43,5 @@ Suggested Package Structure:\
 &nbsp;&nbsp;&nbsp;&nbsp;bookstore.inventory : \
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sample Class: InventoryManager - Provides methods to add new books to inventory, update stock levels, and retrieve book details.\
 &nbsp;&nbsp;&nbsp;&nbsp;bookstore.users : \
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sample Class: Customer - Represents a customer with attributes like name, contact details, and purchase history.\
+	&emsp; Sample Class: Customer - Represents a customer with attributes like name, contact details, and purchase history.\
 (A Folder Named 'bookstore' which contains 3 folders - 'core', 'inventory' & 'users'. 'core' contains definition of 'Book' Class. 'inventory' contains definition of 'InventoryManager' Class. 'users' contains definition of 'Customer' Class.)
