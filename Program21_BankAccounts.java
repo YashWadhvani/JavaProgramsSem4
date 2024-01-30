@@ -7,63 +7,67 @@ class BankAccount {
     String AccHolderName;
     int accBalance, minBalance, withLimit;
 
-    BankAccount(String AccHolderName, int minBalance) {
+    BankAccount(String AccHolderName, int minBalance, int accBalance) {
         this.AccHolderName = AccHolderName;
         this.minBalance = minBalance;
-        this.accBalance = minBalance;
+        this.accBalance = accBalance;
     }
 
     int deposit(int amount, int accBalance) {
-        accBalance += amount;
-        System.out.println(accBalance);
-        return accBalance;
+        this.accBalance += amount;
+        // System.out.println(accBalance);
+        return this.accBalance;
     }
 
     int withdraw(int amount, int accBalance) {
         if (amount <= accBalance) {
-            accBalance -= amount;
+            this.accBalance -= amount;
         } else {
             System.out.println("Insufficient Balance.");
         }
 
-        return accBalance;
+        return this.accBalance;
+    }
+
+    void getBal() {
+        System.out.println("Account Balance : " + this.accBalance);
     }
 }
 
 class SavingsAccount extends BankAccount {
-    SavingsAccount(String AccHolderName) {
-        super(AccHolderName, 10000);
+    SavingsAccount(String AccHolderName, int accBalance) {
+        super(AccHolderName, 10000, accBalance);
         this.withLimit = 50000;
     }
 
     @Override
     int withdraw(int amount, int accBalance) {
-        System.out.println(accBalance);
+        // System.out.println(accBalance);
         if (amount <= withLimit && ((accBalance - amount) >= minBalance)) {
-            accBalance -= amount;
+            this.accBalance -= amount;
         } else {
             System.out.println("Insufficient Balance.");
         }
-        System.out.println(accBalance);
-        return accBalance;
+        // System.out.println(accBalance);
+        return this.accBalance;
     }
 }
 
 class CheckingAccount extends BankAccount {
-    CheckingAccount(String AccHolderName) {
-        super(AccHolderName, 25000);
+    CheckingAccount(String AccHolderName, int accBalance) {
+        super(AccHolderName, 25000, accBalance);
         this.withLimit = 100000;
     }
 
     @Override
     int withdraw(int amount, int accBalance) {
         if (amount <= withLimit && ((accBalance - amount) >= minBalance)) {
-            accBalance -= amount;
+            this.accBalance -= amount;
         } else {
             System.out.println("Insufficient Balance.");
         }
-        System.out.println(accBalance);
-        return accBalance;
+        // System.out.println(accBalance);
+        return this.accBalance;
     }
 }
 
@@ -71,21 +75,23 @@ public class Program21_BankAccounts {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int choice;
+        int choice, Balance;
         String Name;
 
         while (true) {
             System.out.println("Bank Management System");
             System.out.println("Enter Account Holder Name:");
             Name = sc.next();
+            System.out.println("Enter Starting Account Balance:");
+            Balance = sc.nextInt();
             System.out.println("1. Create Savings Account.\n2. Create Checking Account.\n3. Exit.");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
-                    SavingsAccount(Name);
+                    SavingsAccount(Name, Balance);
                     break;
                 case 2:
-                    CheckingAccount(Name);
+                    CheckingAccount(Name, Balance);
                     break;
                 case 3:
                     break;
@@ -96,10 +102,10 @@ public class Program21_BankAccounts {
         }
     }
 
-    private static void SavingsAccount(String Name) {
+    private static void SavingsAccount(String Name, int Balance) {
         int amount;
 
-        SavingsAccount SA = new SavingsAccount(Name);
+        SavingsAccount SA = new SavingsAccount(Name, Balance);
         int ch;
         while (true) {
             System.out.println("1. Deposit.\n2. Withdraw.\n3. Exit.");
@@ -109,11 +115,13 @@ public class Program21_BankAccounts {
                     System.out.println("Enter Amount to Deposit :-");
                     amount = sc.nextInt();
                     SA.deposit(amount, SA.accBalance);
+                    SA.getBal();
                     break;
                 case 2:
                     System.out.println("Enter Amount to Withdraw :-");
                     amount = sc.nextInt();
                     SA.withdraw(amount, SA.accBalance);
+                    SA.getBal();
                     break;
                 case 3:
                     System.out.println("Thank You for Using Bank Management System.");
@@ -125,10 +133,10 @@ public class Program21_BankAccounts {
         }
     }
 
-    private static void CheckingAccount(String Name) {
+    private static void CheckingAccount(String Name, int Balance) {
         int amount;
 
-        CheckingAccount CA = new CheckingAccount(Name);
+        CheckingAccount CA = new CheckingAccount(Name, Balance);
         int ch;
         while (true) {
             System.out.println("1. Deposit.\n2. Withdraw.\n3. Exit.");
@@ -138,11 +146,13 @@ public class Program21_BankAccounts {
                     System.out.println("Enter Amount to Deposit :-");
                     amount = sc.nextInt();
                     CA.deposit(amount, CA.accBalance);
+                    CA.getBal();
                     break;
                 case 2:
                     System.out.println("Enter Amount to Withdraw :-");
                     amount = sc.nextInt();
                     CA.withdraw(amount, CA.accBalance);
+                    CA.getBal();
                     continue;
                 case 3:
                     System.out.println("Thank You for Using Bank Management System.");
