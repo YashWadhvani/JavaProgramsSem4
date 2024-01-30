@@ -13,20 +13,19 @@ class BankAccount {
         this.accBalance = accBalance;
     }
 
-    int deposit(int amount, int accBalance) {
-        this.accBalance += amount;
-        // System.out.println(accBalance);
-        return this.accBalance;
+    int deposit(int amount) {
+        accBalance += amount;
+        return accBalance;
     }
 
-    int withdraw(int amount, int accBalance) {
+    int withdraw(int amount) {
         if (amount <= accBalance) {
-            this.accBalance -= amount;
+            accBalance -= amount;
         } else {
             System.out.println("Insufficient Balance.");
         }
 
-        return this.accBalance;
+        return accBalance;
     }
 
     void getBal() {
@@ -41,15 +40,13 @@ class SavingsAccount extends BankAccount {
     }
 
     @Override
-    int withdraw(int amount, int accBalance) {
-        // System.out.println(accBalance);
+    int withdraw(int amount) {
         if (amount <= withLimit && ((accBalance - amount) >= minBalance)) {
-            this.accBalance -= amount;
+            accBalance -= amount;
         } else {
             System.out.println("Insufficient Balance.");
         }
-        // System.out.println(accBalance);
-        return this.accBalance;
+        return accBalance;
     }
 }
 
@@ -60,14 +57,13 @@ class CheckingAccount extends BankAccount {
     }
 
     @Override
-    int withdraw(int amount, int accBalance) {
+    int withdraw(int amount) {
         if (amount <= withLimit && ((accBalance - amount) >= minBalance)) {
-            this.accBalance -= amount;
+            accBalance -= amount;
         } else {
             System.out.println("Insufficient Balance.");
         }
-        // System.out.println(accBalance);
-        return this.accBalance;
+        return accBalance;
     }
 }
 
@@ -75,92 +71,52 @@ public class Program21_BankAccounts {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int choice, Balance;
-        String Name;
+        int choice, balance, amount;
+        String name;
+        BankAccount Account = null;
 
         while (true) {
-            System.out.println("Bank Management System");
-            System.out.println("Enter Account Holder Name:");
-            Name = sc.next();
-            System.out.println("Enter Starting Account Balance:");
-            Balance = sc.nextInt();
-            System.out.println("1. Create Savings Account.\n2. Create Checking Account.\n3. Exit.");
-            choice = sc.nextInt();
-            switch (choice) {
-                case 1:
-                    SavingsAccount(Name, Balance);
+            if (Account == null) {
+                System.out.println("Bank Management System");
+                System.out.println("1. Create Savings Account.\n" +
+                        "2. Create Checking Account.\n" +
+                        "3. Exit.");
+                choice = sc.nextInt();
+                System.out.println("Enter Account Holder Name:");
+                name = sc.next();
+                System.out.println("Enter Starting ount Balance:");
+                balance = sc.nextInt();
+                if (choice == 1)
+                    Account = new SavingsAccount(name, balance);
+                else if (choice == 2)
+                    Account = new CheckingAccount(name, balance);
+                else if (choice == 3)
                     break;
-                case 2:
-                    CheckingAccount(Name, Balance);
-                    break;
-                case 3:
-                    break;
-                default:
-                    System.out.println("Invalid Choice! Please Enter a Valid Choice.");
-                    break;
-            }
-        }
-    }
-
-    private static void SavingsAccount(String Name, int Balance) {
-        int amount;
-
-        SavingsAccount SA = new SavingsAccount(Name, Balance);
-        int ch;
-        while (true) {
-            System.out.println("1. Deposit.\n2. Withdraw.\n3. Exit.");
-            ch = sc.nextInt();
-            switch (ch) {
-                case 1:
-                    System.out.println("Enter Amount to Deposit :-");
-                    amount = sc.nextInt();
-                    SA.deposit(amount, SA.accBalance);
-                    SA.getBal();
-                    break;
-                case 2:
-                    System.out.println("Enter Amount to Withdraw :-");
-                    amount = sc.nextInt();
-                    SA.withdraw(amount, SA.accBalance);
-                    SA.getBal();
-                    break;
-                case 3:
-                    System.out.println("Thank You for Using Bank Management System.");
-                    break;
-                default:
-                    System.out.println("Invalid Choice! Please Enter a Valid Choice.");
-                    break;
-            }
-        }
-    }
-
-    private static void CheckingAccount(String Name, int Balance) {
-        int amount;
-
-        CheckingAccount CA = new CheckingAccount(Name, Balance);
-        int ch;
-        while (true) {
-            System.out.println("1. Deposit.\n2. Withdraw.\n3. Exit.");
-            ch = sc.nextInt();
-            switch (ch) {
-                case 1:
-                    System.out.println("Enter Amount to Deposit :-");
-                    amount = sc.nextInt();
-                    CA.deposit(amount, CA.accBalance);
-                    CA.getBal();
-                    break;
-                case 2:
-                    System.out.println("Enter Amount to Withdraw :-");
-                    amount = sc.nextInt();
-                    CA.withdraw(amount, CA.accBalance);
-                    CA.getBal();
+                else {
+                    System.out.println("Enter proper choice!!");
                     continue;
-                case 3:
-                    System.out.println("Thank You for Using Bank Management System.");
-                    break;
-                default:
-                    System.out.println("Invalid Choice! Please Enter a Valid Choice.");
-                    break;
+                }
             }
+            System.out.println("1. Deposit Amount.\n" +
+                    "2. Withdraw Amount.\n" +
+                    "3. Exit.");
+            choice = sc.nextInt();
+
+            if (choice == 1) {
+                System.out.println("Enter Amount to Deposit :-");
+                amount = sc.nextInt();
+                Account.deposit(amount);
+                Account.getBal();
+            } else if (choice == 2) {
+                System.out.println("Enter Amount to Withdraw :-");
+                amount = sc.nextInt();
+                Account.withdraw(amount);
+                Account.getBal();
+            } else if (choice == 3)
+                break;
+            else
+                System.out.println("Invalid Choice! Please Enter a Valid Choice.");
         }
+
     }
 }
