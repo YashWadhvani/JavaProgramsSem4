@@ -1,15 +1,16 @@
 package bookstore;
 
-class book {
+public class book {
     String author, title;
-    int ISBN;
     double price;
+    int stock, ISBN;
 
-    book(String title, String author, int ISBN, double price) {
+    public book(String title, String author, int ISBN, double price, int stock) {
         this.author = author;
         this.title = title;
         this.ISBN = ISBN;
         this.price = price;
+        this.stock = stock;
     }
 
     public String getAuthor() {
@@ -28,8 +29,16 @@ class book {
         return price;
     }
 
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
     public String toString() {
         return "Title : " + getTitle() + "\nAuthor : " + getAuthor() + "\nISBN : " + getISBN() + "\nPrice : Rs."
-                + getPrice();
+                + getPrice() + "Stock : " + getStock();
     }
 }
