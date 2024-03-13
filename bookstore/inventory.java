@@ -2,10 +2,10 @@ package bookstore;
 
 import java.util.Scanner;
 
-class inventory {
+public class inventory {
     Scanner scanner = new Scanner(System.in);
 
-    book addBook() {
+    public book addBook() {
         String author, title;
         int ISBN, stock;
         double price;
@@ -25,7 +25,7 @@ class inventory {
         return newBook;
     }
 
-    void updateStock(book Book) {
+    public void updateStock(book Book) {
         int choice, stock;
         stock = Book.getStock();
         System.out.println("Current Stock of " + Book.getTitle() + " = " + stock);
@@ -35,8 +35,12 @@ class inventory {
             choice = scanner.nextInt();
             if (choice == 1) {
                 stock += 1;
+                System.out.println("Current Stock of " + Book.getTitle() + " = " + stock);
+
             } else if (choice == 2) {
                 stock -= 1;
+                System.out.println("Current Stock of " + Book.getTitle() + " = " + stock);
+
             } else if (choice == 3) {
                 break;
             } else {
@@ -45,11 +49,8 @@ class inventory {
         }
 
         Book.setStock(stock);
-    }
+        System.out.println("Final Stock of " + Book.getTitle() + " = " + stock);
 
-    // public static void main(String[] args) {
-    // book newTL = addBook();
-    // System.out.println(newTL);
-    // }
+    }
 
 }

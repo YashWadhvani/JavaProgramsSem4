@@ -1,9 +1,9 @@
 package bookstore;
 
 public class book {
-    String author, title;
-    double price;
-    int stock, ISBN;
+    private String author, title;
+    private double price;
+    private int stock, ISBN;
 
     public book(String title, String author, int ISBN, double price, int stock) {
         this.author = author;
@@ -39,6 +39,6 @@ public class book {
 
     public String toString() {
         return "Title : " + getTitle() + "\nAuthor : " + getAuthor() + "\nISBN : " + getISBN() + "\nPrice : Rs."
-                + getPrice() + "Stock : " + getStock();
+                + getPrice() + "\nStock : " + getStock();
     }
 }
