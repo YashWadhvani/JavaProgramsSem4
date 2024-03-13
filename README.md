@@ -36,12 +36,18 @@ A Repository for storing all the Programs made during the Object Oriented Progra
 20. Develop a simple online shopping system. Create a base class Product with attributes productId, productName, and price. Derive classes Electronics, Clothing, and Books from Product. Add specific attributes for each product type. Create objects for each class and demonstrate polymorphism by displaying product details.
 21. Write a Java program to create a base class BankAccount with methods deposit() and withdraw(). Create two subclasses SavingsAccount and CheckingAccount. Override the withdraw() method in each subclass to impose different withdrawal limits and fees.
 22. Develop a Java application for a bookstore management system. The application needs to handle various operations such as adding new books and managing inventory and to ensure proper organization and modularity, utilize Java packages.\
-Design a package structure for the bookstore management system. Additionally, create a sample class within each package to demonstrate its functionality.\
-Suggested Package Structure:\
-&emsp;bookstore.core : \
-	&emsp;&emsp; Sample Class: Book - Represents a book with attributes such as title, author, ISBN, and price.\
-&emsp;bookstore.inventory : \
-	&emsp;&emsp; Sample Class: InventoryManager - Provides methods to add new books to inventory, update stock levels, and retrieve book details.\
-&emsp;bookstore.users : \
-	&emsp;&emsp; Sample Class: Customer - Represents a customer with attributes like name, contact details, and purchase history.\
-(A Folder Named 'bookstore' which contains 3 folders - 'core', 'inventory' & 'users'. 'core' contains definition of 'Book' Class. 'inventory' contains definition of 'InventoryManager' Class. 'users' contains definition of 'Customer' Class.)
+    Design a package structure for the bookstore management system. Additionally, create a sample class within each package to demonstrate its functionality.\
+    Suggested Package Structure:\
+    &emsp;bookstore.core : \
+     &emsp;&emsp; Sample Class: Book - Represents a book with attributes such as title, author, ISBN, and price.\
+    &emsp;bookstore.inventory : \
+     &emsp;&emsp; Sample Class: InventoryManager - Provides methods to add new books to inventory, update stock levels, and retrieve book details.\
+    &emsp;bookstore.users : \
+     &emsp;&emsp; Sample Class: Customer - Represents a customer with attributes like name, contact details, and purchase history.\
+    (A Folder Named 'bookstore' which contains 3 folders - 'core', 'inventory' & 'users'. 'core' contains definition of 'Book' Class. 'inventory' contains definition of 'InventoryManager' Class. 'users' contains definition of 'Customer' Class.)
+23. Write a java program to find the factorial of a number entered by the user.
+24. Write a java program to find sum of digits in a given number.
+25. Write a java program using try-catch block to handle java.lang.ArithmeticException.
+26. Write a java program using try-catch block to handle java.lang.ArrayIndexOutOfBoundsException
+27. Write a java program using throw keyword to throw custom exception.
+28. Write a java program using throws keyword to handle custom exception.
