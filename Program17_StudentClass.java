@@ -14,6 +14,7 @@ public class Program17_StudentClass {
 class Student {
     int ID;
     String Name;
+    double[] marks = { 0, 0, 0 };
     double a, b, c, avg;
 
     Scanner sc = new Scanner(System.in);
@@ -29,6 +30,9 @@ class Student {
         b = sc.nextDouble();
         System.out.println("Enter Marks of Subject 3:-");
         c = sc.nextDouble();
+        marks[0] = a;
+        marks[1] = b;
+        marks[2] = c;
         avg = (a + b + c) / 3;
     }
 
@@ -38,6 +42,9 @@ class Student {
         System.out.println("Marks of Subject 1= " + a);
         System.out.println("Marks of Subject 2= " + b);
         System.out.println("Marks of Subject 3= " + c);
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println(marks[i]);
+        }
         System.out.println(String.format("Average Marks = %.2f", avg));
     }
 
