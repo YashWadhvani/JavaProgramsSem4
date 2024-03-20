@@ -1,3 +1,6 @@
+// Write a java program using throw keyword to throw custom exception.
+// Date : 20/03/2024, Author : Yash Wadhvani
+
 import java.util.Scanner;
 
 public class Program27_Throw {

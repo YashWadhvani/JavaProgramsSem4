@@ -1,3 +1,6 @@
+// Write a java program using try-catch block to handle java.lang.ArrayIndexOutOfBoundsException
+// Date : 20/03/2024, Author : Yash Wadhvani
+
 public class Program26_ArrayIndexOutOfBoundsException {
     public static void main(String[] args) {
         try {
