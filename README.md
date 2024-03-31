@@ -42,9 +42,7 @@ A Repository for storing all the Programs made during the Object Oriented Progra
      &emsp;&emsp; Sample Class: Book - Represents a book with attributes such as title, author, ISBN, and price.\
     &emsp;bookstore.inventory : \
      &emsp;&emsp; Sample Class: InventoryManager - Provides methods to add new books to inventory, update stock levels, and retrieve book details.\
-    &emsp;bookstore.users : \
-     &emsp;&emsp; Sample Class: Customer - Represents a customer with attributes like name, contact details, and purchase history.\
-    (A Folder Named 'bookstore' which contains 3 folders - 'core', 'inventory' & 'users'. 'core' contains definition of 'Book' Class. 'inventory' contains definition of 'InventoryManager' Class. 'users' contains definition of 'Customer' Class.)
+    (A Folder Named 'bookstore' which contains 2 files - 'core', 'inventory' & 'users'. 'core' contains definition of 'Book' Class. 'inventory' contains definition of 'InventoryManager' Class.)
 23. Write a java program to find the factorial of a number entered by the user.
 24. Write a java program to find sum of digits in a given number.
 25. Write a java program using try-catch block to handle java.lang.ArithmeticException.
@@ -52,7 +50,7 @@ A Repository for storing all the Programs made during the Object Oriented Progra
 27. Write a java program using throw keyword to throw custom exception.
 28. Write a java program using throws keyword to handle custom exception.
 29. Write a java program to showcase how multithreading allows multiple tasks to be executed simultaneously by printing a count from 1 to 5 with a 1-second delay between each count.
-30. Write a java program that uses any 5 methods of "Wrapper" class.
+30. Write a java program to perform autoboxing and unboxing using wrapper class.
 31. Write a java program that uses any 5 methods of "Math" class.
 32. Write a java program that uses any 5 methods of "String" class.
 33. Write a java program that uses any 5 methods of "StringBuffer" class.
